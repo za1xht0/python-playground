@@ -2,6 +2,7 @@ import random
 
 print('Игра "Угадай число".\nЯ загадал случайное число от 1 до 100, а тебе нужно отдагать его.\nУ тебя будет 10 попыток.\nЯ буду давать подсказки, если твой вариант будет меньше или больше загаданного числа.\nУдачи!')
 number = random.randint(1, 100)
+is_get = False
 trying = ''
 for i in range(10):
     trying = int(input('Напиши предположение:'))
@@ -10,8 +11,11 @@ for i in range(10):
     elif trying > number:
         print('Загаданное число меньше')
     elif trying == number:
-        print('Ты угадал! Поздравляю!')
+        is_get = True
         break
-print(f'Ты не смог угадать число...\nПравильный ответ - {number}')
+if is_get:
+    print('Ты угадал число!')
+else:
+    print(f'Ты не смог угадать число...\nПравильный ответ - {number}')
     
     
