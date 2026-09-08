@@ -5,6 +5,7 @@
 ## Как запустить
 
 ```bash
+cd guess_number
 python guess_number.py
 ```
 
