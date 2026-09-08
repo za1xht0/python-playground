@@ -7,10 +7,10 @@
 
 | Проект | Описание |
 |---|---|
-| [ Guess the Number](./guess_number) | Игра «угадай число» |
-| [ Magic Ball](./magic_ball) | Аналог Magic 8-Ball — случайный ответ на вопрос |
-| [ Password Generator](./password_generator) | Генератор случайных паролей |
-| [ Unit Converter](./unit_converter) | Конвертер единиц измерения |
+| [Guess the Number](./guess_number/README.md) | Игра «угадай число» |
+| [Magic Ball](./magic_ball/README.md) | Аналог Magic 8-Ball — случайный ответ на вопрос |
+| [Password Generator](./password_generator/README.md) | Генератор случайных паролей |
+| [Unit Converter](./unit_converter/README.md) | Конвертер единиц измерения |
 
 ## Быстрый старт
 
@@ -22,9 +22,19 @@ cd python-playground
 Каждый проект — самостоятельный скрипт, запускается отдельно:
 
 ```bash
-cd guess_number
-python guess_number.py
+python guess_number/guess.py
+python magic_ball/magic.py
+python password_generator/pass.py
+python unit_converter/unit_con.py
 ```
+
+Для Windows также можно использовать команду `py` вместо `python`.
+
+## Ограничения
+
+- Для запуска требуется Python 3.10 или новее.
+- Внешние зависимости не используются.
+- Проекты работают в консоли и не сохраняют данные между запусками.
 
 ## Стек
 
