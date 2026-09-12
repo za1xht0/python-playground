@@ -29,6 +29,7 @@ while status == False:
             print('Ничья')
         else:
             print("Ты выиграл")
+        raw = ''
     elif status_check == '2':
         status = True
         print('Конец игры')
