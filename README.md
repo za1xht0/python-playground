@@ -11,6 +11,8 @@
 | [Magic Ball](./magic_ball/README.md) | Аналог Magic 8-Ball — случайный ответ на вопрос |
 | [Password Generator](./password_generator/README.md) | Генератор случайных паролей |
 | [Unit Converter](./unit_converter/README.md) | Конвертер единиц измерения |
+| [Paper-Rock-Scissors](./paper_rock_scissors/README.md) | Игра "камень-ножницы-бумага» |
+| [Die roll](./die_roll/README.md) | Бросание кубика  |
 
 ## Быстрый старт
 
