@@ -13,6 +13,7 @@
 | [Unit Converter](./unit_converter/README.md) | Конвертер единиц измерения |
 | [Paper-Rock-Scissors](./paper_rock_scissors/README.md) | Игра "камень-ножницы-бумага» |
 | [Die roll](./die_roll/README.md) | Бросание кубика  |
+| [Username generator](./username_generator/README.md) | Генератор никнеймов  |
 
 ## Быстрый старт
 
