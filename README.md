@@ -14,6 +14,8 @@
 | [Paper-Rock-Scissors](./paper_rock_scissors/README.md) | Игра "камень-ножницы-бумага» |
 | [Die roll](./die_roll/README.md) | Бросание кубика  |
 | [Username generator](./username_generator/README.md) | Генератор никнеймов  |
+| [Calculator](./calc/README.md) | Простой калькулятор  |
+| [Server_Health_checker](./server_health_checker/README.md) | Программа проверки состояния  |
 
 ## Быстрый старт
 
