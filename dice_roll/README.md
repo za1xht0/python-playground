@@ -5,8 +5,8 @@
 ## Как запустить
 
 ```bash
-cd die_roll
-python die_roll.py
+cd dice_roll
+python dice_roll.py
 ```
 
 ## Пример работы

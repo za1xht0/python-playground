@@ -12,7 +12,7 @@
 | [Password Generator](./password_generator/README.md) | Генератор случайных паролей |
 | [Unit Converter](./unit_converter/README.md) | Конвертер единиц измерения |
 | [Paper-Rock-Scissors](./paper_rock_scissors/README.md) | Игра "камень-ножницы-бумага» |
-| [Die roll](./die_roll/README.md) | Бросание кубика  |
+| [Dice roll](./dice_roll/README.md) | Бросание кубика  |
 | [Username generator](./username_generator/README.md) | Генератор никнеймов  |
 | [Calculator](./calc/README.md) | Простой калькулятор  |
 | [Server_Health_checker](./server_health_checker/README.md) | Программа проверки состояния  |
