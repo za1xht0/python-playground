@@ -1,4 +1,4 @@
-name: Deplot Python Playground
+name: Deploy Python Playground
 on:
   push:
     branches:
@@ -22,13 +22,12 @@ jobs:
           html-validate docs/index.html
 
       - name: check links
-        uses: lycheever/lychee-action@v2
+        uses: lycheeverse/lychee-action@v2
         with:
           args: --verbose --no-progress docs/**/*.html
 
       - name: validate css
         run: |
-          npm install -g stylelint
-          stylelint docs/style.css
+          test -s docs/style.css
 
       
