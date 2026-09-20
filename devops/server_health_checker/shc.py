@@ -2,8 +2,8 @@ import sys
 import psutil
 import platform
 
-print('Server Health Checker\n')
-is_on = int(input('Начинаем?\n1. Да\n2. Нет\n'))
+print('\n================================\n      Server Health Checker      \n================================\n')
+print('Running health check...\n')
 cpu_ram_ok = 80
 cpu_ram_warning = 90
 disk_ok = 90
@@ -67,21 +67,19 @@ def main(cpu, ram, disk):
     cpu_result = cpu_check(cpu)
     ram_result =  ram_check(ram)
     disk_result =  disk_check(disk)
-    serv = overall_status(cpu_result, ram_result, disk_result)
-    exit_code = get_exit_code(serv)
-    return f'\nServer Health Checker\n\nCPU: {cpu}% ---- {cpu_result}\nMemory: {ram}% ---- {ram_result}\nDisk: {disk}% ---- {disk_result}\n\nOverall status: {serv}\n', exit_code
+    status = overall_status(cpu_result, ram_result, disk_result)
+    exit_code = get_exit_code(status)
+    return f'\nCPU: {cpu}% ---- {cpu_result}\nMemory: {ram}% ---- {ram_result}\nDisk: {disk}% ---- {disk_result}\n\nOverall status: {status}\n', exit_code
 exit_code = 0
 while True:
-    if is_on == 2:
-        break
     cpu = psutil.cpu_percent(interval=1)
     ram = psutil.virtual_memory().percent
     disk = psutil.disk_usage(disk_path).percent
     res, exit_code = main(cpu, ram, disk)
     print(res)
-    is_on = int(input('Хотите проверить еще раз?\n1. Да\n2. Нет\n'))
-    if is_on == 2:
-        break   
+    is_on = input('Run another check? [y/n]: ').lower()
+    if is_on == 'n':
+        break
 sys.exit(exit_code)
 
 
