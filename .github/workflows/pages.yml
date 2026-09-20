@@ -39,7 +39,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-      
+
     steps:
       - name: setup pages
         uses: actions/configure-pages@v5
@@ -47,6 +47,6 @@ jobs:
       - name: upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ./docs
       - name: deploy to pages
         uses: actions/deploy-pages@v4
