@@ -15,4 +15,8 @@ jobs:
         run: |
           test -f docs/index.html
           test -f docs/style.css
-          
+      
+      - name: validate html
+        run: |
+          npm install -g html-validate
+          html-validate docs/index.html
