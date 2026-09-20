@@ -47,6 +47,6 @@ jobs:
       - name: upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs
+          path: .
       - name: deploy to pages
         uses: actions/deploy-pages@v4
