@@ -3,6 +3,8 @@
 Коллекция небольших Python-проектов для практики: от простых консольных
 скриптов до работы с логикой и пользовательским вводом.
 
+---
+
 ## Проекты
 
 | Проект | Описание |
@@ -33,3 +35,18 @@ python password_generator/pass.py
 python unit_converter/unit_con.py
 ```
 
+## CI/CD
+
+Используется GitHub Actions для автоматических проверок и деплоя.
+
+Pipeline:
+
+1. Получение кода из репозитория
+2. Проверка HTML
+3. Проверка ссылок
+4. Проверка CSS
+5. Деплой на GitHub Pages
+
+## Website
+
+https://za1xht0.github.io/python-playground/
