@@ -2,7 +2,7 @@ name: Deploy Python Playground
 on:
   push:
     branches:
-      - website
+      - main
 
 permissions:
   contents: read
