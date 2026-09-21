@@ -48,17 +48,21 @@
 ## Пример работы
 
 ```
-Server Health Checker
 
-CPU: 5.6% ---- OK
-Memory: 38.8% ---- OK
-Disk: 18.4% ---- OK
+================================
+      Server Health Checker      
+================================
+
+Running health check...
+
+
+CPU: 20.4% ---- OK
+Memory: 36.8% ---- OK
+Disk: 18.9% ---- OK
 
 Overall status: OK
 
-Хотите проверить еще раз?
-1. Да
-2. Нет
+Run another check? [y/n]: 
 ```
 
 ## Требования
