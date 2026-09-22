@@ -5,9 +5,19 @@
 ## Как запустить
 
 ```bash
-cd conf_valid
+cd devops/conf_valid
 python conf_valid.py
 ```
+
+
+## Что проверяет программа
+
+- hostname не должен быть пустым;
+- IP должен быть корректным IPv4 или IPv6 адресом;
+- порт должен быть целым числом в диапазоне от 1 до 65535;
+- environment должен быть одним из значений: `dev`, `stage`, `prod`.
+
+Если хотя бы одно поле заполнено неверно, программа выводит список ошибок и результат `Configuration: INVALID`.
 
 ## Пример работы
 
@@ -20,10 +30,29 @@ example.com
 Введите порт:
 8080
 Введите environment:
-production
+prod
 Configuration: VALID
 ```
 
-Если данные введены некорректно, программа покажет список ошибок и результат `Configuration: INVALID`.
+## Пример ошибки
 
-[Вернуться к корневому README](../README.md)
+```text
+Configuration Validator
+Введите hostname:
+
+Введите ip:
+999.999.999.999
+Введите порт:
+70000
+Введите environment:
+test
+
+Configuration: INVALID
+
+Errors:
+- IP is invalid
+- Port is invalid
+- Environment is invalid
+```
+
+[Вернуться к корневому README](../../README.md)
