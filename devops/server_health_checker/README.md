@@ -64,28 +64,3 @@ Overall status: OK
 
 Run another check? [y/n]: 
 ```
-
-## Требования
-
-* Python 3
-* `psutil`
-
-Установка зависимости:
-
-```bash
-pip install psutil
-```
-
-## Запуск
-
-
-```bash
-python3 server_health_checker.py
-```
-
-## Используемые технологии
-
-* Python
-* psutil
-* Linux
-* Git
