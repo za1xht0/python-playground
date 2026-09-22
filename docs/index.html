@@ -1,99 +1,293 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Python Playground</title>
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5968/5968544.png">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Python Playground</h1>
-        <p>Коллекция небольших проектов на Python, созданных в процессе обучения и практики</p>
-        <a href="https://github.com/za1xht0/python-playground" class="button">Посмотреть на GitHub</a>
+
+<div class="container">
+
+    <header class="header">
+
+        <pre class="ascii-title">
+██████╗ ██╗   ██╗████████╗██╗  ██╗ ██████╗ ███╗   ██╗
+██╔══██╗╚██╗ ██╔╝╚══██╔══╝██║  ██║██╔═══██╗████╗  ██║
+██████╔╝ ╚████╔╝    ██║   ███████║██║   ██║██╔██╗ ██║
+██╔═══╝   ╚██╔╝     ██║   ██╔══██║██║   ██║██║╚██╗██║
+██║        ██║      ██║   ██║  ██║╚██████╔╝██║ ╚████║
+╚═╝        ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+        </pre>
+
+        <pre class="ascii-subtitle">
+██████╗ ██╗      █████╗ ██╗   ██╗  ██████╗ ██████╗  ██████╗ ██╗   ██╗ ███╗   ██╗ ██████╗ 
+██╔══██╗██║     ██╔══██╗╚██╗ ██╔╝ ██╔════╝ ██╔══██╗██╔═══██╗██║   ██║ ████╗  ██║ ██╔══██╗
+██████╔╝██║     ███████║ ╚████╔╝  ██║  ███╗██████╔╝██║   ██║██║   ██║ ██╔██╗ ██║ ██║  ██║
+██╔═══╝ ██║     ██╔══██║  ╚██╔╝   ██║   ██║██╔══██╗██║   ██║██║   ██║ ██║╚██╗██║ ██║  ██║
+██║     ███████╗██║  ██║   ██║    ╚██████╔╝██║  ██║╚██████╔╝╚██████╔╝ ██║ ╚████║ ██████╔╝
+╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝  ╚═╝  ╚═══╝ ╚═════╝
+        </pre>
+
+        <p class="description">
+            &gt; A collection of Python projects.
+            <br>
+            &gt; Built to practice programming and develop DevOps-oriented skills.
+            <br>
+        </p>
+
     </header>
 
-    <main>
-        <section>
-            <h2>Проекты</h2>
-            <div class="project-list">
-                <div class="project">
-                    <h3>Guess the Number</h3>
-                    <p>Консольная игра, в которой вы пытаетесь угадать случайно выбранное число.</p>
-                    <p class="technology">Python + random</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/guess_number" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Password Generator</h3>
-                    <p>Генерирует случайные пароли из букв верхнего и нижнего регистра, цифр и символов.</p>
-                    <p class="technology">Python + random</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/password_generator" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Server Health Checker</h3>
-                    <p>Программа автоматически получает показатели CPU, RAM и диска, сравнивает их с заданными порогами и определяет общее состояние системы.</p>
-                    <p class="technology">Python + psutil</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/devops/server_health_checker" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Configuration Validator</h3>
-                    <p>Проверяет параметры имени хоста, IP-адреса, порта и конфигурации среды.</p>
-                    <p class="technology">Python</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/devops/conf_valid" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Unit Converter</h3>
-                    <p>Преобразует расстояния, температуры, массу, длину и объём между общими единицами измерения.</p>
-                    <p class="technology">Python</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/unit_converter" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Rock Paper Scissors</h3>
-                    <p>Консольная игра, в которой вы играете в камень, ножницы, бумагу против компьютера.</p>
-                    <p class="technology">Python + random</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/paper_rock_scissors" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Calculator</h3>
-                    <p>Консольный калькулятор для сложения, вычитания, умножения и деления.</p>
-                    <p class="technology">Python</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/calc" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Magic Ball</h3>
-                    <p>Шар предсказаний, который отвечает на любой вопрос случайным ответом.</p>
-                    <p class="technology">Python + random</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/magic_ball" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Dice Roll</h3>
-                    <p>Игра в кости против компьютера, где первый игрок, выигравший три раунда, побеждает.</p>
-                    <p class="technology">Python + random</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/dice_roll" class="button">Посмотреть исходный код</a>
-                </div>
-                <div class="project">
-                    <h3>Username Generator</h3>
-                    <p>Генерирует английский никнейм, комбинируя случайное прилагательное и существительное.</p>
-                    <p class="technology">Python + random</p>
-                    <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/username_generator" class="button">Посмотреть исходный код</a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>О проекте</h2>
-            <p>Python Playground — это коллекция небольших проектов,
-созданных в процессе обучения Python.
 
-Проекты охватывают основы программирования,
-автоматизацию и небольшие консольные приложения.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Python Playground | GitHub | za1xht0</p>
+    <section class="section">
+
+        <div class="section-title">
+            [ PROJECTS ]
+        </div>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>01 :: CALCULATOR</h3>
+
+                <p>
+                    Simple command-line calculator for basic arithmetic operations.
+                </p>
+
+                <span class="technology">Python</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/calc"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>02 :: CONFIGURATION VALIDATOR</h3>
+
+                <p>
+                    Validates configuration values and reports incorrect or missing data.
+                </p>
+
+                <span class="technology">Python</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/devops/conf_valid"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>03 :: DICE ROLL</h3>
+
+                <p>
+                    Command-line dice rolling simulator using Python randomization.
+                </p>
+
+                <span class="technology">Python + random</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/dice_roll"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>04 :: GUESS THE NUMBER</h3>
+
+                <p>
+                    Interactive number guessing game with input validation.
+                </p>
+
+                <span class="technology">Python + random</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/guess_number"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>05 :: MAGIC BALL</h3>
+
+                <p>
+                    CLI fortune-telling program inspired by the classic Magic 8-Ball.
+                </p>
+
+                <span class="technology">Python + random</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/magic_ball"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>06 :: PAPER ROCK SCISSORS</h3>
+
+                <p>
+                    Command-line implementation of the classic rock-paper-scissors game.
+                </p>
+
+                <span class="technology">Python + random</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/paper_rock_scissors"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>07 :: PASSWORD GENERATOR</h3>
+
+                <p>
+                    Generates random passwords with configurable character sets.
+                </p>
+
+                <span class="technology">Python + random</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/password_generator"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>08 :: SERVER HEALTH CHECKER</h3>
+
+                <p>
+                    Checks CPU, memory and disk usage and reports system health.
+                </p>
+
+                <span class="technology">Python + psutil</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/devops/server_health_checker"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>09 :: UNIT CONVERTER</h3>
+
+                <p>
+                    Converts values between common measurement units.
+                </p>
+
+                <span class="technology">Python</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/unit_converter"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>10 :: USERNAME GENERATOR</h3>
+
+                <p>
+                    Generates random usernames from predefined word combinations.
+                </p>
+
+                <span class="technology">Python + random</span>
+
+                <a href="https://github.com/za1xht0/python-playground/tree/main/beginner/username_generator"
+                   target="_blank">
+                    [ SOURCE ]
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-title">
+            [ TECHNOLOGIES ]
+        </div>
+
+        <div class="box">
+
+            <pre>
+LANGUAGE     : Python
+INTERFACE    : CLI
+VERSION CTRL : Git
+            </pre>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <div class="section-title">
+            [ ABOUT ]
+        </div>
+
+        <div class="box">
+
+            <p>
+                Python Playground is a personal learning repository focused
+                on developing practical Python skills.
+            </p>
+
+            <p>
+                The projects start with simple CLI applications and gradually
+                move toward more practical programming and DevOps-related tasks.
+            </p>
+
+            <p>
+                The repository also serves as a playground for Git, testing,
+                CI/CD and automation.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-title">
+            [ LINKS ]
+        </div>
+
+        <div class="box">
+
+            <div class="command">
+                $ github → <a href="https://github.com/za1xht0/python-playground"
+                              target="_blank">
+                    github.com/za1xht0/python-playground
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        python-playground :: learning python through practice
     </footer>
+
+</div>
+
 </body>
 </html>
+
